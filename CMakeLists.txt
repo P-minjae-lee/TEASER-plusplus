@@ -61,7 +61,6 @@ if (BUILD_TEASER_FPFH)
     find_package(PCL 1.8 QUIET REQUIRED COMPONENTS common io features kdtree)
 
     include_directories(${PCL_INCLUDE_DIRS})
-)
 endif ()
 
 # googletest
