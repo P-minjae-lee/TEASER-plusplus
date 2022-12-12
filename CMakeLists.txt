@@ -54,8 +54,11 @@ if (ENABLE_MKL)
 endif ()
 
 if (BUILD_TEASER_FPFH)
+    set(Boost_INCLUDE_DIR /usr/include/)
+    set(Boost_LIBRARY_DIR /usr/lib/aarch64-linux-gnu/)
+    
     # Boost
-    find_package(Boost QUIET REQUIRED)
+    find_package(Boost 1.58 QUIET REQUIRED)
 
     # PCL
     find_package(PCL 1.8 QUIET REQUIRED COMPONENTS common io features kdtree)
