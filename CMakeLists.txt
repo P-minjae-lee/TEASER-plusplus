@@ -54,8 +54,8 @@ if (ENABLE_MKL)
 endif ()
 
 if (BUILD_TEASER_FPFH)
-    #set(Boost_INCLUDE_DIR /usr/include/)
-    #set(Boost_LIBRARY_DIR /usr/lib/aarch64-linux-gnu/) # For Xavier
+    set(Boost_INCLUDE_DIR /usr/include/)
+    set(Boost_LIBRARY_DIR /usr/lib/aarch64-linux-gnu/) # For Xavier
     #set(Boost_LIBRARY_DIR /usr/lib/x86_64-linux-gnu)
     
     # Boost
